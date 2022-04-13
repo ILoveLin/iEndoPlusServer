@@ -1,0 +1,28 @@
+{
+  "name": "iendo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "ajv-errors": "^1.0.1",
+    "body-parser": "^1.15.2",
+    "co": "latest",
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "ini": "latest",
+    "jade": "~1.11.0",
+    "moment": "latest",
+    "morgan": "~1.9.1",
+    "mssql": "latest",
+    "multer": "^1.4.3"
+  },
+  "apidoc": {
+    "title": "iEndo接口文档",
+    "url": "http://localhost:3000"
+  }
+}

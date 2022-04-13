@@ -1,0 +1,31 @@
+1安装nodejs
+node-v16.9.1-x64.msi
+2安装项目运行管理（pm2）
+npm install -g pm2
+3安装pm2为windows-service
+npm i -g pm2-windows-service
+4配置pm2环境变量
+右键 [我的电脑] - [属性] - [高级系统设置] - [环境变量] - 新建 [系统变量]
+添加系统环境变量 PM2_HOME=C:\Users\Administrator\.pm2（pm2安装路径，需要自己确认）
+5配置windows-service
+pm2-service-install  Perform environment setup ? 选 n, 继续
+6确认PM2服务是否已经启动
+CMD services.msc
+7安装项目依赖环境
+cd 到项目目录iendo
+cd ..
+cd D:
+cd iendo
+npm install --save
+8启动项目
+pm2 start process (在项目目录)，
+如果报错[PM2] Spawning PM2 daemon with pm2_home=C:\Users\admin\.pm2
+使用管理员运行CMD，cd到项目目录重复步骤8
+9 添加到自启动服务
+pm2 save
+10 确认项目正常启动
+打开浏览器输入 http://localhost:3000 出现welcome to IEndo 说明启动成功
+11 验证开机自启动
+关闭设备，重新启动，重复步骤10
+
+
